@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./ShopsPage.css";
 import nammakumta from "./image/logo-nammakumta.png";
@@ -13,34 +12,31 @@ import jewelry from "./image/jewelry-store.png";
 import tailor from "./image/tailor-shop.png";
 import electronics from "./image/electronic-store.png";
 
-const scrollToEnd = () => {
-  const lastShop = document.getElementById("pharmacy");
-  if (lastShop) {
-    lastShop.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
-};
-
 const ShopsPage = () => {
   return (
-    <div className="shops-container">
-      {/* Header Section */}
+    <div className="shops-page">
+      {/* Header */}
       <header className="header">
-        <div className="header-left">
-          <img src={nammakumta} alt="Namma Kumata" className="logo" />
-          <span className="title">Namma Kumata</span>
+        <div className="logo-container">
+          <img src={nammakumta} alt="Namma Kumata Logo" className="logo" />
+          <span className="app-name">Namma Kumata</span>
         </div>
-        <div className="icons">
+        <div className="header-icons">
           <img src={bell} alt="Notifications" />
-          <img src={user} alt="User" className="user" />
-          <img src={global} alt="Language" />
+          <img src={user} alt="User" />
+          <img src={global} alt="Global" />
         </div>
       </header>
 
+      {/* Shops Title */}
+      <div className="shops-title">
+        <p>Shops</p>
+      </div>
+
       {/* Shops List Section */}
       <div className="shops-list">
-        <h2 className="shops-title">Shops</h2>
         <ul>
-          <li onClick={scrollToEnd}>
+          <li>
             <img src={grocery} alt="Grocery Store" />
             Grocery Store
           </li>
@@ -68,44 +64,30 @@ const ShopsPage = () => {
             <img src={electronics} alt="Electronics Store" />
             Electronics Store
           </li>
-          <li>
-            <img src={electronics} alt="Mobile Repair Shop" />
-            Mobile Repair Shop
-          </li>
-          <li>
-            <img src={electronics} alt="Car Dealership" />
-            Car Dealership
-          </li>
-          <li>
-            <img src={electronics} alt="Auto Repair Shop" />
-            Auto Repair Shop
-          </li>
-          <li>
-            <img src={electronics} alt="Spare Parts Store" />
-            Spare Parts Store
-          </li>
-          <li id="pharmacy">
-            <img src={electronics} alt="Pharmacy" />
-            Pharmacy
-          </li>
         </ul>
       </div>
 
       {/* Bottom Navigation */}
-      <nav className="bottom-nav">
-        <div className="nav-item">
-          <i className="home-icon"></i> Home
+      <div className="bottom-nav">
+        <div className="nav-item active">
+          <img src={bell} alt="Home" className="nav-icon" />
+          <span>Home</span>
         </div>
         <div className="nav-item">
-          <i className="search-icon"></i> Search
+          <img src={bell} alt="Search" className="nav-icon" />
+          <span>Search</span>
         </div>
         <div className="nav-item">
-          <i className="add-icon"></i> Add/Join
+          <div className="add-button">
+            <img src={bell} alt="Add" className="nav-icon" />
+          </div>
+          <span>Add/Join</span>
         </div>
         <div className="nav-item">
-          <i className="alert-icon"></i> Alerts
+          <img src={bell} alt="Alerts" className="nav-icon" />
+          <span>Alerts</span>
         </div>
-      </nav>
+      </div>
     </div>
   );
 };
