@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.shops-container {
+  width: 100%;
+  margin: auto;
+  background: white;
+}
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.logo {
+  width: 100px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.title {
+  font-weight: bold;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.shops-list {
+  margin-top: 70px;
+  padding: 0 10px;
+  height: calc(100vh - 130px);
+  overflow-y: auto;
+}
+
+.shops-title {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+.shops-list ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 47px;
+  scroll-behavior: smooth;
+}
+
+.shops-list li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  cursor: pointer;
+}
+
+.shops-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.shops-list img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  background: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 14px;
+}
