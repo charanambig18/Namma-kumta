@@ -30,7 +30,8 @@ const ShopsPage = () => {
 
       {/* Shops Title */}
       <div className="shops-title">
-        <p>Shops</p>
+        <img src="./image/slider.png" alt="" />
+        <h1>Shops</h1>
       </div>
 
       {/* Shops List Section */}
@@ -64,27 +65,47 @@ const ShopsPage = () => {
             <img src={electronics} alt="Electronics Store" />
             Electronics Store
           </li>
+          <li>
+            <img src={electronics} alt="Electronics Store" />
+            Electronics Store
+          </li>
+          <li>
+            <img src={electronics} alt="Electronics Store" />
+            Electronics Store
+          </li>
+          <li>
+            <img src={electronics} alt="Electronics Store" />
+            Electronics Store
+          </li>
+          <li>
+            <img src={electronics} alt="Electronics Store" />
+            Electronics Store
+          </li>
+          <li>
+            <img src={electronics} alt="Electronics Store" />
+            Electronics Store
+          </li>
         </ul>
       </div>
 
       {/* Bottom Navigation */}
       <div className="bottom-nav">
         <div className="nav-item active">
-          <img src={bell} alt="Home" className="nav-icon" />
+          <img src="./image/home.png" alt="Home" className="nav-icon" />
           <span>Home</span>
         </div>
         <div className="nav-item">
-          <img src={bell} alt="Search" className="nav-icon" />
+          <img src="./image/search-bar.png" alt="Search" className="nav-icon" />
           <span>Search</span>
         </div>
         <div className="nav-item">
           <div className="add-button">
-            <img src={bell} alt="Add" className="nav-icon" />
+            <img src="./image/add.png" alt="Add" className="nav-icon" />
           </div>
           <span>Add/Join</span>
         </div>
         <div className="nav-item">
-          <img src={bell} alt="Alerts" className="nav-icon" />
+          <img src="./image/alert.png" alt="Alerts" className="nav-icon" />
           <span>Alerts</span>
         </div>
       </div>
